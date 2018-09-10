@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 ## iOS TryOut Projects
 
 These are the projects i have done for my own learning.
@@ -8,7 +8,7 @@ These are the projects i have done for my own learning.
 These assets are provided for your convenience to complete Auto Layout courses on Pluralsight.  Clone or download this repository and create a new master-detail project in Xcode.  Add these images as assets to your project. 
 
 
-##Please Note
+## Please Note
 
 The image assets used in the sample project are from a James will s Autolayout Tutorial for Adaptive Layouts. I was undergoing this course from Pluralsight. All these images were used from the clone of Git repo of the sample project used for this Course. 
 
