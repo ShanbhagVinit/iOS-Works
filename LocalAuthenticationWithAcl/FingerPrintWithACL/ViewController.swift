@@ -12,21 +12,20 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let button = UIButton(type: .custom)
-        button.frame = CGRect(x: 0, y: 0, width: 80, height: 40)
-        button.setTitle("Tap To Login", for: .normal)
-        button.setTitleColor(.blue, for: .normal)
-        view.addSubview(button)
-        button.addTarget(self, action: #selector(didTapLogin), for: .touchUpInside)
-        button.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        button.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-        button.translatesAutoresizingMaskIntoConstraints = false
+//        button.frame = CGRect(x: 0, y: 0, width: 80, height: 40)
+//        button.setTitle("Tap To Login", for: .normal)
+//        button.setTitleColor(.blue, for: .normal)
+//        view.addSubview(button)
+//        button.addTarget(self, action: #selector(didTapLogin), for: .touchUpInside)
+//        button.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+//        button.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+//        button.translatesAutoresizingMaskIntoConstraints = false
         
     }
     
-    @objc private func didTapLogin() {
-        print("didTapLogin")
+    @IBAction func didTapLogin(_ sender: UIButton) {
     }
+    
 
 }
 
