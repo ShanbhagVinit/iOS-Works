@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A3278F5214C29F200230349 /* CredentialManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3278F4214C29F200230349 /* CredentialManager.swift */; };
+		5A3278F7214D360E00230349 /* KeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3278F6214D360E00230349 /* KeyChain.swift */; };
 		5AB9A0A7214A38C500E96675 /* BiometricLoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB9A0A6214A38C500E96675 /* BiometricLoginManager.swift */; };
 		5AB9A0A9214A392500E96675 /* BiometricAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB9A0A8214A392500E96675 /* BiometricAuthenticator.swift */; };
 		5AF8010B2146C07400078BEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF8010A2146C07400078BEB /* AppDelegate.swift */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A3278F4214C29F200230349 /* CredentialManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialManager.swift; sourceTree = "<group>"; };
+		5A3278F6214D360E00230349 /* KeyChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChain.swift; sourceTree = "<group>"; };
 		5AB9A0A6214A38C500E96675 /* BiometricLoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricLoginManager.swift; sourceTree = "<group>"; };
 		5AB9A0A8214A392500E96675 /* BiometricAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricAuthenticator.swift; sourceTree = "<group>"; };
 		5AF801072146C07400078BEB /* FingerPrintWithACL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FingerPrintWithACL.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +70,8 @@
 				5AF801162146C07500078BEB /* Info.plist */,
 				5AB9A0A6214A38C500E96675 /* BiometricLoginManager.swift */,
 				5AB9A0A8214A392500E96675 /* BiometricAuthenticator.swift */,
+				5A3278F4214C29F200230349 /* CredentialManager.swift */,
+				5A3278F6214D360E00230349 /* KeyChain.swift */,
 			);
 			path = FingerPrintWithACL;
 			sourceTree = "<group>";
@@ -142,6 +148,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AB9A0A9214A392500E96675 /* BiometricAuthenticator.swift in Sources */,
+				5A3278F7214D360E00230349 /* KeyChain.swift in Sources */,
+				5A3278F5214C29F200230349 /* CredentialManager.swift in Sources */,
 				5AB9A0A7214A38C500E96675 /* BiometricLoginManager.swift in Sources */,
 				5AF8010D2146C07400078BEB /* ViewController.swift in Sources */,
 				5AF8010B2146C07400078BEB /* AppDelegate.swift in Sources */,
