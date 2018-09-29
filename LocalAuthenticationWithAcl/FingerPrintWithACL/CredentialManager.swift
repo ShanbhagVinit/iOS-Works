@@ -45,11 +45,20 @@ final class CredentialManager: UserCredentialStoreType {
     }
     
     public func storePassword(password: String) {
-        
+        let result = self.secretStore.set(password: password, forKey: KeyIdentifiers.password)
+        if result != nil {
+            print(result?.stringValue)
+        } else {
+            print("Storing successful")
+        }
     }
     
     func retrievePassword(reasonForAcess: String, comepletionHandler: @escaping (String?, Error?) -> Void) {
-        
+        DispatchQueue.global().async { [weak self] in
+            self?.secretStore.getString(for: KeyIdentifiers.password, localizedReason: reasonForAcess, completionHandler: { (password, error) in
+                comepletionHandler(password, error)
+            })
+        }
     }
     
 }
