@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Z8j-Gu-xW4">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="2304" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="wVH-aP-jwG">
+            <objects>
+                <tabBarController id="Z8j-Gu-xW4" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iFy-iO-Q5N">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="699-96-lWh" kind="relationship" relationship="viewControllers" id="XKj-cw-81U"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d0P-cY-uR2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-863" y="-299"/>
+        </scene>
+        <!--Chapters-->
+        <scene sceneID="CwY-R4-R5P">
+            <objects>
+                <navigationController id="699-96-lWh" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Chapters" image="icons8-Align Text Top-20" id="MHd-cx-yJu"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="bCS-cL-83G">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ZbT-bc-qMB" kind="relationship" relationship="rootViewController" id="2RE-H3-3gx"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fJP-AQ-dln" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="10" y="-478"/>
+        </scene>
+        <!--Chapters View Controller-->
+        <scene sceneID="BMe-Nb-skc">
+            <objects>
+                <viewController id="ZbT-bc-qMB" customClass="ChaptersViewController" customModule="Bhagavadgeetha" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FTl-ck-QEe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="KeL-1t-fD0"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="HAz-Zm-bXg"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sra-BS-XRY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="764" y="-464"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icons8-Align Text Top-20" width="20" height="20"/>
+    </resources>
+</document>

@@ -1,0 +1,778 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A3F354920AD493D00FB3D37 /* ReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3F354720AD493D00FB3D37 /* ReaderViewController.swift */; };
+		3A46512E2019E57200E60431 /* DBUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A46512D2019E57200E60431 /* DBUtils.swift */; };
+		3A4651302019EC3C00E60431 /* Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A46512F2019EC3C00E60431 /* Quotes.swift */; };
+		3A4651322019EC7500E60431 /* Chapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A4651312019EC7500E60431 /* Chapter.swift */; };
+		3A645B2E205AFAB1009717E4 /* TableViewCoordination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A645B2D205AFAB1009717E4 /* TableViewCoordination.swift */; };
+		3A8137AB1F72464F0018AF88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8137AA1F72464F0018AF88 /* AppDelegate.swift */; };
+		3A8137B01F72464F0018AF88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A8137AE1F72464F0018AF88 /* Main.storyboard */; };
+		3A8137B21F72464F0018AF88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A8137B11F72464F0018AF88 /* Assets.xcassets */; };
+		3A8137B51F72464F0018AF88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A8137B31F72464F0018AF88 /* LaunchScreen.storyboard */; };
+		3A8137C01F72464F0018AF88 /* BhagavadgeethaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8137BF1F72464F0018AF88 /* BhagavadgeethaTests.swift */; };
+		3A8137CB1F72464F0018AF88 /* BhagavadgeethaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8137CA1F72464F0018AF88 /* BhagavadgeethaUITests.swift */; };
+		3A8137D91F72774E0018AF88 /* Lord-Krishna-preaching-Bhagavad-Gita.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3A8137D81F72774E0018AF88 /* Lord-Krishna-preaching-Bhagavad-Gita.jpg */; };
+		3A881560205D85A9000BF5F2 /* ChapterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A88155E205D85A9000BF5F2 /* ChapterCell.swift */; };
+		3A8D030E2045E0E700F2BC35 /* gita.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 3A8D030D2045E0E700F2BC35 /* gita.sqlite */; };
+		3A8D03102045E82D00F2BC35 /* ChaptersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A8D030F2045E82D00F2BC35 /* ChaptersViewController.swift */; };
+		3AF7ACC9206D5E24009E90D8 /* ChapterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7ACC8206D5E24009E90D8 /* ChapterListView.swift */; };
+		3AF7ACCB206D5E6C009E90D8 /* ChapterListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AF7ACCA206D5E6C009E90D8 /* ChapterListView.xib */; };
+		3AFE13DA1F752A5F00B76E0E /* FavouritesChapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFE13D91F752A5F00B76E0E /* FavouritesChapterViewController.swift */; };
+		5A4DCBEC20B973C000397D7A /* ReadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4DCBEB20B973C000397D7A /* ReadViewModel.swift */; };
+		5A4DCBEE20B973D300397D7A /* ChapterCellCoordination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4DCBED20B973D300397D7A /* ChapterCellCoordination.swift */; };
+		5A4DCBF020B973DD00397D7A /* Coordinatinated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4DCBEF20B973DC00397D7A /* Coordinatinated.swift */; };
+		5A4DCBF220B973FA00397D7A /* ChapterListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4DCBF120B973FA00397D7A /* ChapterListPresenter.swift */; };
+		5A4DCBF420B9740700397D7A /* ReaderViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4DCBF320B9740700397D7A /* ReaderViewPresenter.swift */; };
+		5A4DCBF620B9742000397D7A /* ChapterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A4DCBF520B9742000397D7A /* ChapterCell.xib */; };
+		5A4DCBF820B9742900397D7A /* ReaderViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A4DCBF720B9742900397D7A /* ReaderViewController.xib */; };
+		5A4DCBFE20B9819200397D7A /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A4DCBFD20B9819200397D7A /* libsqlite3.0.tbd */; };
+		5ABC9E3C216EFC97009CCEFC /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5A4DCBFB20B9818200397D7A /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3A8137BC1F72464F0018AF88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A81379F1F72464F0018AF88 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A8137A61F72464F0018AF88;
+			remoteInfo = Bhagavadgeetha;
+		};
+		3A8137C71F72464F0018AF88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3A81379F1F72464F0018AF88 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3A8137A61F72464F0018AF88;
+			remoteInfo = Bhagavadgeetha;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5ABC9E3D216EFC97009CCEFC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5ABC9E3C216EFC97009CCEFC /* SQLite.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3A3F354720AD493D00FB3D37 /* ReaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderViewController.swift; sourceTree = "<group>"; };
+		3A46512D2019E57200E60431 /* DBUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBUtils.swift; sourceTree = "<group>"; };
+		3A46512F2019EC3C00E60431 /* Quotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quotes.swift; sourceTree = "<group>"; };
+		3A4651312019EC7500E60431 /* Chapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter.swift; sourceTree = "<group>"; };
+		3A46513A2019F7E800E60431 /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLite.framework; path = Bhagavadgeetha/Carthage/Build/iOS/SQLite.framework; sourceTree = "<group>"; };
+		3A4651412019F8E200E60431 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		3A645B2D205AFAB1009717E4 /* TableViewCoordination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCoordination.swift; sourceTree = "<group>"; };
+		3A8137A71F72464F0018AF88 /* Bhagavadgeetha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bhagavadgeetha.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A8137AA1F72464F0018AF88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3A8137AF1F72464F0018AF88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3A8137B11F72464F0018AF88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3A8137B41F72464F0018AF88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3A8137B61F72464F0018AF88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A8137BB1F72464F0018AF88 /* BhagavadgeethaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BhagavadgeethaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A8137BF1F72464F0018AF88 /* BhagavadgeethaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BhagavadgeethaTests.swift; sourceTree = "<group>"; };
+		3A8137C11F72464F0018AF88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A8137C61F72464F0018AF88 /* BhagavadgeethaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BhagavadgeethaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A8137CA1F72464F0018AF88 /* BhagavadgeethaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BhagavadgeethaUITests.swift; sourceTree = "<group>"; };
+		3A8137CC1F72464F0018AF88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A8137D81F72774E0018AF88 /* Lord-Krishna-preaching-Bhagavad-Gita.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Lord-Krishna-preaching-Bhagavad-Gita.jpg"; sourceTree = "<group>"; };
+		3A88155E205D85A9000BF5F2 /* ChapterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterCell.swift; sourceTree = "<group>"; };
+		3A8D030D2045E0E700F2BC35 /* gita.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = gita.sqlite; sourceTree = "<group>"; };
+		3A8D030F2045E82D00F2BC35 /* ChaptersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChaptersViewController.swift; sourceTree = "<group>"; };
+		3AF7ACC8206D5E24009E90D8 /* ChapterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterListView.swift; sourceTree = "<group>"; };
+		3AF7ACCA206D5E6C009E90D8 /* ChapterListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChapterListView.xib; sourceTree = "<group>"; };
+		3AFE13D91F752A5F00B76E0E /* FavouritesChapterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouritesChapterViewController.swift; sourceTree = "<group>"; };
+		5A4DCBEB20B973C000397D7A /* ReadViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadViewModel.swift; sourceTree = "<group>"; };
+		5A4DCBED20B973D300397D7A /* ChapterCellCoordination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterCellCoordination.swift; sourceTree = "<group>"; };
+		5A4DCBEF20B973DC00397D7A /* Coordinatinated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinatinated.swift; sourceTree = "<group>"; };
+		5A4DCBF120B973FA00397D7A /* ChapterListPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterListPresenter.swift; sourceTree = "<group>"; };
+		5A4DCBF320B9740700397D7A /* ReaderViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReaderViewPresenter.swift; sourceTree = "<group>"; };
+		5A4DCBF520B9742000397D7A /* ChapterCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ChapterCell.xib; sourceTree = "<group>"; };
+		5A4DCBF720B9742900397D7A /* ReaderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReaderViewController.xib; sourceTree = "<group>"; };
+		5A4DCBFB20B9818200397D7A /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLite.framework; path = Carthage/Build/iOS/SQLite.framework; sourceTree = "<group>"; };
+		5A4DCBFD20B9819200397D7A /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A8137A41F72464F0018AF88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A4DCBFE20B9819200397D7A /* libsqlite3.0.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A8137B81F72464F0018AF88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A8137C31F72464F0018AF88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3A0961AE205AED82000543F2 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				3A8137AE1F72464F0018AF88 /* Main.storyboard */,
+				3A8137B31F72464F0018AF88 /* LaunchScreen.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		3A0961B1205AEE7D000543F2 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				3A8D030D2045E0E700F2BC35 /* gita.sqlite */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		3A0961B2205AEE9B000543F2 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				3A8137B11F72464F0018AF88 /* Assets.xcassets */,
+				3A8137D81F72774E0018AF88 /* Lord-Krishna-preaching-Bhagavad-Gita.jpg */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		3A0961B3205AEEBC000543F2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5AFDA75D217068DC00432051 /* ReaderViewController */,
+				5AFDA75C217068C600432051 /* ChapterList */,
+				5AFDA75B217068B500432051 /* ChapterCell */,
+				3AFE13D91F752A5F00B76E0E /* FavouritesChapterViewController.swift */,
+				3A8D030F2045E82D00F2BC35 /* ChaptersViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3A0961B4205AEEF0000543F2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3A46512F2019EC3C00E60431 /* Quotes.swift */,
+				3A4651312019EC7500E60431 /* Chapter.swift */,
+				3A645B2D205AFAB1009717E4 /* TableViewCoordination.swift */,
+				5A4DCBEF20B973DC00397D7A /* Coordinatinated.swift */,
+				5A4DCBED20B973D300397D7A /* ChapterCellCoordination.swift */,
+				5A4DCBEB20B973C000397D7A /* ReadViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3A4651372019F72200E60431 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A4DCBFD20B9819200397D7A /* libsqlite3.0.tbd */,
+				5A4DCBFB20B9818200397D7A /* SQLite.framework */,
+				3A4651412019F8E200E60431 /* libsqlite3.tbd */,
+				3A46513A2019F7E800E60431 /* SQLite.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3A81379E1F72464F0018AF88 = {
+			isa = PBXGroup;
+			children = (
+				3A8137A91F72464F0018AF88 /* Bhagavadgeetha */,
+				3A8137BE1F72464F0018AF88 /* BhagavadgeethaTests */,
+				3A8137C91F72464F0018AF88 /* BhagavadgeethaUITests */,
+				3A8137A81F72464F0018AF88 /* Products */,
+				3A4651372019F72200E60431 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3A8137A81F72464F0018AF88 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3A8137A71F72464F0018AF88 /* Bhagavadgeetha.app */,
+				3A8137BB1F72464F0018AF88 /* BhagavadgeethaTests.xctest */,
+				3A8137C61F72464F0018AF88 /* BhagavadgeethaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3A8137A91F72464F0018AF88 /* Bhagavadgeetha */ = {
+			isa = PBXGroup;
+			children = (
+				3AED7E61206175B000F54159 /* Providers */,
+				3AFCFC25205E801700B109F9 /* Presenter */,
+				3A8137AA1F72464F0018AF88 /* AppDelegate.swift */,
+				3A0961B4205AEEF0000543F2 /* Model */,
+				3A0961B3205AEEBC000543F2 /* View */,
+				3A0961B2205AEE9B000543F2 /* Assets */,
+				3A0961B1205AEE7D000543F2 /* Resource */,
+				3A0961AE205AED82000543F2 /* UI */,
+				3A8137B61F72464F0018AF88 /* Info.plist */,
+			);
+			path = Bhagavadgeetha;
+			sourceTree = "<group>";
+		};
+		3A8137BE1F72464F0018AF88 /* BhagavadgeethaTests */ = {
+			isa = PBXGroup;
+			children = (
+				3A8137BF1F72464F0018AF88 /* BhagavadgeethaTests.swift */,
+				3A8137C11F72464F0018AF88 /* Info.plist */,
+			);
+			path = BhagavadgeethaTests;
+			sourceTree = "<group>";
+		};
+		3A8137C91F72464F0018AF88 /* BhagavadgeethaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3A8137CA1F72464F0018AF88 /* BhagavadgeethaUITests.swift */,
+				3A8137CC1F72464F0018AF88 /* Info.plist */,
+			);
+			path = BhagavadgeethaUITests;
+			sourceTree = "<group>";
+		};
+		3AED7E61206175B000F54159 /* Providers */ = {
+			isa = PBXGroup;
+			children = (
+				3A46512D2019E57200E60431 /* DBUtils.swift */,
+			);
+			path = Providers;
+			sourceTree = "<group>";
+		};
+		3AFCFC25205E801700B109F9 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5A4DCBF320B9740700397D7A /* ReaderViewPresenter.swift */,
+				5A4DCBF120B973FA00397D7A /* ChapterListPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5AFDA75B217068B500432051 /* ChapterCell */ = {
+			isa = PBXGroup;
+			children = (
+				3A88155E205D85A9000BF5F2 /* ChapterCell.swift */,
+				5A4DCBF520B9742000397D7A /* ChapterCell.xib */,
+			);
+			path = ChapterCell;
+			sourceTree = "<group>";
+		};
+		5AFDA75C217068C600432051 /* ChapterList */ = {
+			isa = PBXGroup;
+			children = (
+				3AF7ACCA206D5E6C009E90D8 /* ChapterListView.xib */,
+				3AF7ACC8206D5E24009E90D8 /* ChapterListView.swift */,
+			);
+			path = ChapterList;
+			sourceTree = "<group>";
+		};
+		5AFDA75D217068DC00432051 /* ReaderViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3A3F354720AD493D00FB3D37 /* ReaderViewController.swift */,
+				5A4DCBF720B9742900397D7A /* ReaderViewController.xib */,
+			);
+			path = ReaderViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3A8137A61F72464F0018AF88 /* Bhagavadgeetha */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A8137CF1F72464F0018AF88 /* Build configuration list for PBXNativeTarget "Bhagavadgeetha" */;
+			buildPhases = (
+				3A8137A31F72464F0018AF88 /* Sources */,
+				3A8137A41F72464F0018AF88 /* Frameworks */,
+				3A8137A51F72464F0018AF88 /* Resources */,
+				3A4651442019F95100E60431 /* ShellScript */,
+				5ABC9E3D216EFC97009CCEFC /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bhagavadgeetha;
+			productName = Bhagavadgeetha;
+			productReference = 3A8137A71F72464F0018AF88 /* Bhagavadgeetha.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3A8137BA1F72464F0018AF88 /* BhagavadgeethaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A8137D21F72464F0018AF88 /* Build configuration list for PBXNativeTarget "BhagavadgeethaTests" */;
+			buildPhases = (
+				3A8137B71F72464F0018AF88 /* Sources */,
+				3A8137B81F72464F0018AF88 /* Frameworks */,
+				3A8137B91F72464F0018AF88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A8137BD1F72464F0018AF88 /* PBXTargetDependency */,
+			);
+			name = BhagavadgeethaTests;
+			productName = BhagavadgeethaTests;
+			productReference = 3A8137BB1F72464F0018AF88 /* BhagavadgeethaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3A8137C51F72464F0018AF88 /* BhagavadgeethaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A8137D51F72464F0018AF88 /* Build configuration list for PBXNativeTarget "BhagavadgeethaUITests" */;
+			buildPhases = (
+				3A8137C21F72464F0018AF88 /* Sources */,
+				3A8137C31F72464F0018AF88 /* Frameworks */,
+				3A8137C41F72464F0018AF88 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3A8137C81F72464F0018AF88 /* PBXTargetDependency */,
+			);
+			name = BhagavadgeethaUITests;
+			productName = BhagavadgeethaUITests;
+			productReference = 3A8137C61F72464F0018AF88 /* BhagavadgeethaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3A81379F1F72464F0018AF88 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Shanbhag's Mac";
+				TargetAttributes = {
+					3A8137A61F72464F0018AF88 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 9UR97RTQTT;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+					};
+					3A8137BA1F72464F0018AF88 = {
+						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3A8137A61F72464F0018AF88;
+					};
+					3A8137C51F72464F0018AF88 = {
+						CreatedOnToolsVersion = 8.3.2;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 3A8137A61F72464F0018AF88;
+					};
+				};
+			};
+			buildConfigurationList = 3A8137A21F72464F0018AF88 /* Build configuration list for PBXProject "Bhagavadgeetha" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3A81379E1F72464F0018AF88;
+			productRefGroup = 3A8137A81F72464F0018AF88 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3A8137A61F72464F0018AF88 /* Bhagavadgeetha */,
+				3A8137BA1F72464F0018AF88 /* BhagavadgeethaTests */,
+				3A8137C51F72464F0018AF88 /* BhagavadgeethaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3A8137A51F72464F0018AF88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A8137D91F72774E0018AF88 /* Lord-Krishna-preaching-Bhagavad-Gita.jpg in Resources */,
+				3A8137B51F72464F0018AF88 /* LaunchScreen.storyboard in Resources */,
+				3AF7ACCB206D5E6C009E90D8 /* ChapterListView.xib in Resources */,
+				3A8137B21F72464F0018AF88 /* Assets.xcassets in Resources */,
+				5A4DCBF820B9742900397D7A /* ReaderViewController.xib in Resources */,
+				3A8D030E2045E0E700F2BC35 /* gita.sqlite in Resources */,
+				3A8137B01F72464F0018AF88 /* Main.storyboard in Resources */,
+				5A4DCBF620B9742000397D7A /* ChapterCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A8137B91F72464F0018AF88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A8137C41F72464F0018AF88 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3A4651442019F95100E60431 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/SQLite.framework",
+			);
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SQLite.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3A8137A31F72464F0018AF88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5A4DCBF220B973FA00397D7A /* ChapterListPresenter.swift in Sources */,
+				3A4651302019EC3C00E60431 /* Quotes.swift in Sources */,
+				3A645B2E205AFAB1009717E4 /* TableViewCoordination.swift in Sources */,
+				3AFE13DA1F752A5F00B76E0E /* FavouritesChapterViewController.swift in Sources */,
+				3A881560205D85A9000BF5F2 /* ChapterCell.swift in Sources */,
+				3A3F354920AD493D00FB3D37 /* ReaderViewController.swift in Sources */,
+				5A4DCBEC20B973C000397D7A /* ReadViewModel.swift in Sources */,
+				3A8D03102045E82D00F2BC35 /* ChaptersViewController.swift in Sources */,
+				5A4DCBF020B973DD00397D7A /* Coordinatinated.swift in Sources */,
+				5A4DCBEE20B973D300397D7A /* ChapterCellCoordination.swift in Sources */,
+				3AF7ACC9206D5E24009E90D8 /* ChapterListView.swift in Sources */,
+				3A8137AB1F72464F0018AF88 /* AppDelegate.swift in Sources */,
+				3A46512E2019E57200E60431 /* DBUtils.swift in Sources */,
+				5A4DCBF420B9740700397D7A /* ReaderViewPresenter.swift in Sources */,
+				3A4651322019EC7500E60431 /* Chapter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A8137B71F72464F0018AF88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A8137C01F72464F0018AF88 /* BhagavadgeethaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A8137C21F72464F0018AF88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A8137CB1F72464F0018AF88 /* BhagavadgeethaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3A8137BD1F72464F0018AF88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A8137A61F72464F0018AF88 /* Bhagavadgeetha */;
+			targetProxy = 3A8137BC1F72464F0018AF88 /* PBXContainerItemProxy */;
+		};
+		3A8137C81F72464F0018AF88 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3A8137A61F72464F0018AF88 /* Bhagavadgeetha */;
+			targetProxy = 3A8137C71F72464F0018AF88 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3A8137AE1F72464F0018AF88 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A8137AF1F72464F0018AF88 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3A8137B31F72464F0018AF88 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A8137B41F72464F0018AF88 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3A8137CD1F72464F0018AF88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3A8137CE1F72464F0018AF88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3A8137D01F72464F0018AF88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9UR97RTQTT;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Bhagavadgeetha/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shanbhagVinit.Bhagavadgeetha;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		3A8137D11F72464F0018AF88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 9UR97RTQTT;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SRCROOT)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = Bhagavadgeetha/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shanbhagVinit.Bhagavadgeetha;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		3A8137D31F72464F0018AF88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BhagavadgeethaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shanbhagVinit.BhagavadgeethaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bhagavadgeetha.app/Bhagavadgeetha";
+			};
+			name = Debug;
+		};
+		3A8137D41F72464F0018AF88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BhagavadgeethaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shanbhagVinit.BhagavadgeethaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bhagavadgeetha.app/Bhagavadgeetha";
+			};
+			name = Release;
+		};
+		3A8137D61F72464F0018AF88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = BhagavadgeethaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shanbhagVinit.BhagavadgeethaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = Bhagavadgeetha;
+			};
+			name = Debug;
+		};
+		3A8137D71F72464F0018AF88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = BhagavadgeethaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.shanbhagVinit.BhagavadgeethaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = Bhagavadgeetha;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A8137A21F72464F0018AF88 /* Build configuration list for PBXProject "Bhagavadgeetha" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A8137CD1F72464F0018AF88 /* Debug */,
+				3A8137CE1F72464F0018AF88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A8137CF1F72464F0018AF88 /* Build configuration list for PBXNativeTarget "Bhagavadgeetha" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A8137D01F72464F0018AF88 /* Debug */,
+				3A8137D11F72464F0018AF88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A8137D21F72464F0018AF88 /* Build configuration list for PBXNativeTarget "BhagavadgeethaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A8137D31F72464F0018AF88 /* Debug */,
+				3A8137D41F72464F0018AF88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3A8137D51F72464F0018AF88 /* Build configuration list for PBXNativeTarget "BhagavadgeethaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A8137D61F72464F0018AF88 /* Debug */,
+				3A8137D71F72464F0018AF88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3A81379F1F72464F0018AF88 /* Project object */;
+}
