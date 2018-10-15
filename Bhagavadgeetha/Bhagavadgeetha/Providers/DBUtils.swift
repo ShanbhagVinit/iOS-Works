@@ -9,7 +9,12 @@
 import Foundation
 import SQLite3
 
-class DBDataProvider {
+protocol DBManagerType {
+    func readChapters() -> [Chapter]
+    func getQuotes(from Chapter: Int) -> [Quotes]
+}
+
+class DBDataProvider: DBManagerType {
     
     var dbPath : String
     
@@ -46,9 +51,9 @@ class DBDataProvider {
         }
     }
     
-    func read() -> [Chapter]?{
+    func readChapters() -> [Chapter] {
         var db : OpaquePointer? = nil
-        var chaptersArray : Array<Chapter> = []
+        var chaptersArray : [Chapter] = []
         if(sqlite3_open(dbPath, &db) == SQLITE_OK){
             print("Succesfully opened Connection")
             var queryStatement :OpaquePointer? = nil
@@ -59,10 +64,10 @@ class DBDataProvider {
                 
                 while(sqlite3_step(queryStatement) == SQLITE_ROW)
                 {
-                    let num = sqlite3_column_int(queryStatement, 0)
+                    let num = Int(sqlite3_column_int(queryStatement, 0))
                     let name = String(cString :sqlite3_column_text(queryStatement, 1)!)
                     
-                    let chapter = Chapter(num: Int(num),name: name)
+                    let chapter = Chapter(number: num, name: name)
                     chaptersArray.append(chapter)
                     
                 }
@@ -76,5 +81,39 @@ class DBDataProvider {
         }
         sqlite3_close(db)
         return chaptersArray
+    }
+    
+    /* find the reference https://www.sqlite.org/c3ref/prepare.html to know more about
+       the method params and their significance */
+    func getQuotes(from chapter: Int) -> [Quotes] {
+        var db: OpaquePointer? = nil
+        var quotesArray: [Quotes] = []
+        if sqlite3_open(dbPath, &db) == SQLITE_OK {
+            print("Successfully opened conection")
+            var queryStatment : OpaquePointer? = nil
+            let statement = "select meaning, sloka_sanskrit, sloka_eng from quotes where ch_no='\(chapter)'"
+            print(statement)
+            if sqlite3_prepare_v2(db , statement, -1, &queryStatment, nil) == SQLITE_OK {
+                while sqlite3_step(queryStatment) == SQLITE_ROW {
+                    var meaning = ""
+                    var sanskrit_sloka: String = ""
+                    var eng_sloka: String = ""
+                    if let cStringMeaning = sqlite3_column_text(queryStatment, 0), let cStringSanskrit = sqlite3_column_text(queryStatment, 1), let cStringEnglish = sqlite3_column_text(queryStatment, 2)  {
+                       meaning = String(cString: cStringMeaning)
+                       sanskrit_sloka = String(cString: cStringSanskrit)
+                       eng_sloka = String(cString: cStringEnglish)
+                    }
+                    let quote = Quotes(meaning: meaning, sanskrit_sloka: sanskrit_sloka, eng_sloka: eng_sloka)
+                    quotesArray.append(quote)
+                }
+            }else {
+                print("Didn't execute")
+            }
+            sqlite3_finalize(queryStatment)
+        } else {
+            print("Error in opening connection")
+        }
+        sqlite3_close(db)
+        return quotesArray
     }
 }

@@ -15,13 +15,11 @@ protocol ChapterListDelegate {
 class ChapterListPresenter: ChapterListDelegate {
     
     //private var dataProvider: 
-    var dataProvider = DBDataProvider()
+    var dataProvider = Container.resolver.dataBaseManager
     
     
     func getChapters() -> [Chapter] {
-        guard let chapterData = dataProvider.read() else {
-             return []
-        }
+        let chapterData = dataProvider.readChapters()
         return chapterData
     }
 }

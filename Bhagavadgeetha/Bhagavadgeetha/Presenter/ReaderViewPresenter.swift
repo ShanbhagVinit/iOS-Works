@@ -10,14 +10,51 @@ import Foundation
 
 protocol ReaderViewPresenterType {
     func setUpChapterID(_ chapterID: Int)
+    func getQuote(for index: Int) -> String
+    func numberOfQuotes() -> Int
+}
+
+struct FillTextViewOptions: OptionSet {
+    let rawValue: Int
+
+    static let sanskritText = FillTextViewOptions(rawValue: 1 << 0)
+    static let englishText = FillTextViewOptions(rawValue: 1 << 1)
+    static let meaningText = FillTextViewOptions(rawValue: 1 << 2)
 }
 
 class ReaderViewPresenter: ReaderViewPresenterType {
 
     private var chapterID: Int = 0
+    private let dbManager = Container.resolver.dataBaseManager
+    private var quotesArray: [Quotes] = []
+    private let formatter = "\n\n"
     
-    func setUpChapterID(_ chapterID: Int) {
+    
+    public func setUpChapterID(_ chapterID: Int) {
         self.chapterID = chapterID
+        quotesArray = dbManager.getQuotes(from: chapterID)
+    }
+    
+    public func getQuote(for index: Int) -> String {
+        var quote: String = " "
+        var fillTextViewOptions: [FillTextViewOptions] = []
+        if quotesArray[index].sanskrit_sloka != "" {
+            fillTextViewOptions.append(.sanskritText)
+            quote = "\(quotesArray[index].sanskrit_sloka)\(formatter)"
+        }
+        if quotesArray[index].eng_sloka != "" {
+            fillTextViewOptions.append(.englishText)
+            quote = quote.appending("\(quotesArray[index].eng_sloka)\(formatter)")
+        }
+        if quotesArray[index].meaning != "" {
+            fillTextViewOptions.append(.meaningText)
+             quote = quote.appending("\(quotesArray[index].meaning)\(formatter)")
+        }
+        return quote
+    }
+    
+    public func numberOfQuotes() -> Int {
+        return quotesArray.count
     }
     
 }

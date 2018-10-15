@@ -8,13 +8,8 @@
 
 import Foundation
 
-class Chapter {
-    public let number : Int
-    public let name : String
-    
-    init(num : Int, name : String) {
-        self.number = num
-        self.name = name
-    }
+struct Chapter {
+    let number : Int
+    let name : String
 }
 

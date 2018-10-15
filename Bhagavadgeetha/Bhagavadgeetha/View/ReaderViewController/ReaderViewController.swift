@@ -11,15 +11,35 @@ import UIKit
 class ReaderViewController: UIViewController {
 
     @IBOutlet weak var readTextView: UITextView!
-    @IBOutlet weak var readerSlider: UISlider!
-   
+    @IBOutlet weak var indexLabel: UILabel!
     @IBOutlet weak var containerView: UIView!
     
+    
+    @IBOutlet weak var backButton: UIButton!
+
+    @IBOutlet weak var nextButton: UIButton!
+    
+    private var currentIndex: Int = 0 {
+        didSet {
+            if currentIndex < readerPresenter.numberOfQuotes() && currentIndex >= 0 {
+                setUpLabelText()
+                setupNextButtonState()
+                setUpBackButtonState()
+                readTextView.text = readerPresenter.getQuote(for: currentIndex)
+            }
+        }
+    }
     private var isReading: Bool = false
+    private let readerPresenter: ReaderViewPresenterType = ReaderViewPresenter()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        containerView.layer.cornerRadius = 20.0
-        readTextView.isEditable = false
+        readTextView.layer.cornerRadius = 20.0
+        self.title = "Quotes"
+        let rightBarButtonItem = UIBarButtonItem.init(title: "Share", style: .plain, target: self, action: #selector(didTapShare))
+        navigationItem.rightBarButtonItem = rightBarButtonItem
+        readTextView.text = readerPresenter.getQuote(for: 0)
+        setUpLabelText()
       
     }
 
@@ -30,31 +50,66 @@ class ReaderViewController: UIViewController {
 
     public init(chapterId: Int) {
         super.init(nibName: nil, bundle: nil)
+        readerPresenter.setUpChapterID(chapterId)
+        
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
-    @IBAction func clickedPreviousButton(_ sender: UIButton) {
+    private func setUpLabelText() {
+        indexLabel.text = "\(currentIndex + 1) / \(readerPresenter.numberOfQuotes())"
     }
-    @IBAction func clickedPlayPauseButton(_ sender: UIButton) {
-        if isReading {
-            //Stop Reading
-            print("Stop Reading")
-            sender.setImage(#imageLiteral(resourceName: "icons8-Circled Play_50"), for: .normal)
-        } else {
-            //Start Reading
-            print("Start Reading")
-            sender.setImage(#imageLiteral(resourceName: "icons8-Pause Button_50"), for: .normal)
+    
+    @IBAction func clickedBackButton(_ sender: UIButton) {
+        if currentIndex > 0 {
+            currentIndex -= 1
         }
-        isReading = !isReading
     }
-    @IBAction func clickedNextPreviousButton(_ sender: UIButton) {
+    
+    @IBAction func clickedNextButton(_ sender: UIButton) {
+        if currentIndex < readerPresenter.numberOfQuotes() {
+            currentIndex += 1
+        }
+    }
+
+    @objc private func didTapShare() {
+        let controller = UIAlertController.init(title: "Share Options", message: "Share this Quote on Social Apps", preferredStyle: .actionSheet)
+        let fbShareAction = UIAlertAction(title: "FaceBook", style: .default) { (action) in
+
+        }
+        fbShareAction.setValue(UIImage(named: "Facebook-filled"), forKey: "image")
+        let twitterShareAction = UIAlertAction(title: "Twitter", style: .default) { (action) in
+
+        }
+        twitterShareAction.setValue(UIImage(named: "Twitter-filled"), forKey: "image")
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+        controller.addAction(fbShareAction)
+        controller.addAction(twitterShareAction)
+        controller.addAction(cancelAction)
+        self.present(controller, animated: true, completion: nil)
         
     }
     
+    private func setupNextButtonState() {
+        if currentIndex >= readerPresenter.numberOfQuotes() {
+            nextButton.isEnabled = false
+            nextButton.alpha = 0.5
+        } else {
+            nextButton.isEnabled = true
+            nextButton.alpha = 1.0
+        }
+    }
     
-    @IBAction func clickedFavouriteButton(_ sender: UIButton) {
+    private func setUpBackButtonState() {
+        if currentIndex < 0 {
+            backButton.isEnabled = false
+            backButton.alpha = 0.5
+        } else {
+            backButton.isEnabled = true
+            backButton.alpha = 1.0
+        }
     }
-    required init?(coder aDecoder: NSCoder) {
-       
-        fatalError("init(coder:) has not been implemented")
-    }
+    
 }
