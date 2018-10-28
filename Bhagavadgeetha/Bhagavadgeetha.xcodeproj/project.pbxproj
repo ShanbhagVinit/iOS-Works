@@ -25,6 +25,7 @@
 		3AF7ACC9206D5E24009E90D8 /* ChapterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF7ACC8206D5E24009E90D8 /* ChapterListView.swift */; };
 		3AF7ACCB206D5E6C009E90D8 /* ChapterListView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3AF7ACCA206D5E6C009E90D8 /* ChapterListView.xib */; };
 		3AFE13DA1F752A5F00B76E0E /* FavouritesChapterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AFE13D91F752A5F00B76E0E /* FavouritesChapterViewController.swift */; };
+		5A291CA52185DE33005DDFC9 /* build-phase in Resources */ = {isa = PBXBuildFile; fileRef = 5A291CA42185DE33005DDFC9 /* build-phase */; };
 		5A30E4ED217228C80032DB68 /* DependencyResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A30E4EC217228C80032DB68 /* DependencyResolver.swift */; };
 		5A30E4EF217262AD0032DB68 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A30E4EE217262AD0032DB68 /* Container.swift */; };
 		5A4DCBEC20B973C000397D7A /* ReadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4DCBEB20B973C000397D7A /* ReadViewModel.swift */; };
@@ -96,6 +97,7 @@
 		3AF7ACC8206D5E24009E90D8 /* ChapterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterListView.swift; sourceTree = "<group>"; };
 		3AF7ACCA206D5E6C009E90D8 /* ChapterListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChapterListView.xib; sourceTree = "<group>"; };
 		3AFE13D91F752A5F00B76E0E /* FavouritesChapterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouritesChapterViewController.swift; sourceTree = "<group>"; };
+		5A291CA42185DE33005DDFC9 /* build-phase */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "build-phase"; sourceTree = "<group>"; };
 		5A30E4EC217228C80032DB68 /* DependencyResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyResolver.swift; sourceTree = "<group>"; };
 		5A30E4EE217262AD0032DB68 /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
 		5A4DCBEB20B973C000397D7A /* ReadViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadViewModel.swift; sourceTree = "<group>"; };
@@ -221,6 +223,7 @@
 		3A8137A91F72464F0018AF88 /* Bhagavadgeetha */ = {
 			isa = PBXGroup;
 			children = (
+				5A291CA42185DE33005DDFC9 /* build-phase */,
 				5A30E4F221749E1E0032DB68 /* Miscellaneous */,
 				3A8137AA1F72464F0018AF88 /* AppDelegate.swift */,
 				5A30E4EB217228B10032DB68 /* DependencyInjection  */,
@@ -324,7 +327,7 @@
 				3A8137A31F72464F0018AF88 /* Sources */,
 				3A8137A41F72464F0018AF88 /* Frameworks */,
 				3A8137A51F72464F0018AF88 /* Resources */,
-				3A4651442019F95100E60431 /* ShellScript */,
+				3A4651442019F95100E60431 /* Run Script */,
 				5ABC9E3D216EFC97009CCEFC /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -427,6 +430,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A291CA52185DE33005DDFC9 /* build-phase in Resources */,
 				3A8137D91F72774E0018AF88 /* Lord-Krishna-preaching-Bhagavad-Gita.jpg in Resources */,
 				3A8137B51F72464F0018AF88 /* LaunchScreen.storyboard in Resources */,
 				3AF7ACCB206D5E6C009E90D8 /* ChapterListView.xib in Resources */,
@@ -455,7 +459,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3A4651442019F95100E60431 /* ShellScript */ = {
+		3A4651442019F95100E60431 /* Run Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 8;
 			files = (
@@ -463,12 +467,13 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/SQLite.framework",
 			);
+			name = "Run Script";
 			outputPaths = (
 				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SQLite.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
