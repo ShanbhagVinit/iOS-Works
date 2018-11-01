@@ -76,12 +76,12 @@ class ReaderViewController: UIViewController {
 
     @objc private func didTapShare() {
         let controller = UIAlertController.init(title: "Share Options", message: "Share this Quote on Social Apps", preferredStyle: .actionSheet)
-        let fbShareAction = UIAlertAction(title: "FaceBook", style: .default) { (action) in
-
+        let fbShareAction = UIAlertAction(title: "FaceBook", style: .default) { [weak self] _ in
+            self?.clickedFaceBookShareOption()
         }
         fbShareAction.setValue(UIImage(named: "Facebook-filled"), forKey: "image")
-        let twitterShareAction = UIAlertAction(title: "Twitter", style: .default) { (action) in
-
+        let twitterShareAction = UIAlertAction(title: "Twitter", style: .default) { [weak self] _ in
+            self?.clickedTwitterShareOption()
         }
         twitterShareAction.setValue(UIImage(named: "Twitter-filled"), forKey: "image")
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
@@ -112,4 +112,11 @@ class ReaderViewController: UIViewController {
         }
     }
     
+    private func clickedFaceBookShareOption() {
+    
+    }
+    
+    private func clickedTwitterShareOption() {
+        
+    }
 }

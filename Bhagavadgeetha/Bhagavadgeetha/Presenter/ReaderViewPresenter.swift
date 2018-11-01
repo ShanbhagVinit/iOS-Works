@@ -40,15 +40,15 @@ class ReaderViewPresenter: ReaderViewPresenterType {
         var fillTextViewOptions: [FillTextViewOptions] = []
         if quotesArray[index].sanskrit_sloka != "" {
             fillTextViewOptions.append(.sanskritText)
-            quote = "\(quotesArray[index].sanskrit_sloka)\(formatter)"
+            quote = "Sanskrit Version:\(formatter)\(quotesArray[index].sanskrit_sloka)\(formatter)"
         }
         if quotesArray[index].eng_sloka != "" {
             fillTextViewOptions.append(.englishText)
-            quote = quote.appending("\(quotesArray[index].eng_sloka)\(formatter)")
+            quote = quote.appending("English version: \(formatter)\(quotesArray[index].eng_sloka)\(formatter)")
         }
         if quotesArray[index].meaning != "" {
             fillTextViewOptions.append(.meaningText)
-             quote = quote.appending("\(quotesArray[index].meaning)\(formatter)")
+            quote = quote.appending("Meaning: \(formatter)\(quotesArray[index].meaning)\(formatter)")
         }
         return quote
     }

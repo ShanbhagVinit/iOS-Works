@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		077BF6724CEE646302F615EB /* Pods_BhagavadgeethaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4CC0F4415489BE111CA2A86 /* Pods_BhagavadgeethaTests.framework */; };
+		10177BE19C1FC6521D6C8F8E /* Pods_BhagavadgeethaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A78BDF8B818B902B9A5AB6B /* Pods_BhagavadgeethaUITests.framework */; };
+		1BEA26DF1FE23B21B77973BD /* Pods_Bhagavadgeetha.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A1020846F868708F0CE894DD /* Pods_Bhagavadgeetha.framework */; };
 		3A3F354920AD493D00FB3D37 /* ReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3F354720AD493D00FB3D37 /* ReaderViewController.swift */; };
 		3A46512E2019E57200E60431 /* DBUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A46512D2019E57200E60431 /* DBUtils.swift */; };
 		3A4651302019EC3C00E60431 /* Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A46512F2019EC3C00E60431 /* Quotes.swift */; };
@@ -28,6 +31,7 @@
 		5A291CA52185DE33005DDFC9 /* build-phase in Resources */ = {isa = PBXBuildFile; fileRef = 5A291CA42185DE33005DDFC9 /* build-phase */; };
 		5A30E4ED217228C80032DB68 /* DependencyResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A30E4EC217228C80032DB68 /* DependencyResolver.swift */; };
 		5A30E4EF217262AD0032DB68 /* Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A30E4EE217262AD0032DB68 /* Container.swift */; };
+		5A3A8FAB218B347C005B2B9C /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A3A8FAA218B347C005B2B9C /* Bolts.framework */; };
 		5A4DCBEC20B973C000397D7A /* ReadViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4DCBEB20B973C000397D7A /* ReadViewModel.swift */; };
 		5A4DCBEE20B973D300397D7A /* ChapterCellCoordination.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4DCBED20B973D300397D7A /* ChapterCellCoordination.swift */; };
 		5A4DCBF020B973DD00397D7A /* Coordinatinated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4DCBEF20B973DC00397D7A /* Coordinatinated.swift */; };
@@ -71,6 +75,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		180A14B509AC0C4A7DEBC251 /* Pods-Bhagavadgeetha.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bhagavadgeetha.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bhagavadgeetha/Pods-Bhagavadgeetha.debug.xcconfig"; sourceTree = "<group>"; };
+		2B6757D72D54C3AE4574D093 /* Pods-BhagavadgeethaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BhagavadgeethaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BhagavadgeethaTests/Pods-BhagavadgeethaTests.release.xcconfig"; sourceTree = "<group>"; };
 		3A3F354720AD493D00FB3D37 /* ReaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReaderViewController.swift; sourceTree = "<group>"; };
 		3A46512D2019E57200E60431 /* DBUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBUtils.swift; sourceTree = "<group>"; };
 		3A46512F2019EC3C00E60431 /* Quotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quotes.swift; sourceTree = "<group>"; };
@@ -97,9 +103,16 @@
 		3AF7ACC8206D5E24009E90D8 /* ChapterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChapterListView.swift; sourceTree = "<group>"; };
 		3AF7ACCA206D5E6C009E90D8 /* ChapterListView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChapterListView.xib; sourceTree = "<group>"; };
 		3AFE13D91F752A5F00B76E0E /* FavouritesChapterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavouritesChapterViewController.swift; sourceTree = "<group>"; };
+		4011E343C05D2BCBBE9BCE8E /* Pods-Bhagavadgeetha.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bhagavadgeetha.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bhagavadgeetha/Pods-Bhagavadgeetha.release.xcconfig"; sourceTree = "<group>"; };
+		4A78BDF8B818B902B9A5AB6B /* Pods_BhagavadgeethaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BhagavadgeethaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51565EF73E69033C4C8472A8 /* Pods-BhagavadgeethaUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BhagavadgeethaUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BhagavadgeethaUITests/Pods-BhagavadgeethaUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5A291CA42185DE33005DDFC9 /* build-phase */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "build-phase"; sourceTree = "<group>"; };
 		5A30E4EC217228C80032DB68 /* DependencyResolver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyResolver.swift; sourceTree = "<group>"; };
 		5A30E4EE217262AD0032DB68 /* Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Container.swift; sourceTree = "<group>"; };
+		5A3A8FAA218B347C005B2B9C /* Bolts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Bolts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A4682DD218B2E8000E0831F /* Bolts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Bolts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A4682E1218B2EF400E0831F /* Bolts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Bolts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A4682E3218B2F6C00E0831F /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A4DCBEB20B973C000397D7A /* ReadViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadViewModel.swift; sourceTree = "<group>"; };
 		5A4DCBED20B973D300397D7A /* ChapterCellCoordination.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChapterCellCoordination.swift; sourceTree = "<group>"; };
 		5A4DCBEF20B973DC00397D7A /* Coordinatinated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinatinated.swift; sourceTree = "<group>"; };
@@ -109,6 +122,10 @@
 		5A4DCBF720B9742900397D7A /* ReaderViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReaderViewController.xib; sourceTree = "<group>"; };
 		5A4DCBFB20B9818200397D7A /* SQLite.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SQLite.framework; path = Carthage/Build/iOS/SQLite.framework; sourceTree = "<group>"; };
 		5A4DCBFD20B9819200397D7A /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		A1020846F868708F0CE894DD /* Pods_Bhagavadgeetha.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bhagavadgeetha.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4CC0F4415489BE111CA2A86 /* Pods_BhagavadgeethaTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BhagavadgeethaTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E3B2BF5B1F246328B5C66AB2 /* Pods-BhagavadgeethaTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BhagavadgeethaTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BhagavadgeethaTests/Pods-BhagavadgeethaTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F824D144F4A42D50F1A46704 /* Pods-BhagavadgeethaUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BhagavadgeethaUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BhagavadgeethaUITests/Pods-BhagavadgeethaUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,7 +133,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5A3A8FAB218B347C005B2B9C /* Bolts.framework in Frameworks */,
 				5A4DCBFE20B9819200397D7A /* libsqlite3.0.tbd in Frameworks */,
+				1BEA26DF1FE23B21B77973BD /* Pods_Bhagavadgeetha.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,6 +143,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				077BF6724CEE646302F615EB /* Pods_BhagavadgeethaTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +151,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10177BE19C1FC6521D6C8F8E /* Pods_BhagavadgeethaUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,10 +212,17 @@
 		3A4651372019F72200E60431 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5A3A8FAA218B347C005B2B9C /* Bolts.framework */,
+				5A4682E3218B2F6C00E0831F /* FBSDKCoreKit.framework */,
+				5A4682E1218B2EF400E0831F /* Bolts.framework */,
+				5A4682DD218B2E8000E0831F /* Bolts.framework */,
 				5A4DCBFD20B9819200397D7A /* libsqlite3.0.tbd */,
 				5A4DCBFB20B9818200397D7A /* SQLite.framework */,
 				3A4651412019F8E200E60431 /* libsqlite3.tbd */,
 				3A46513A2019F7E800E60431 /* SQLite.framework */,
+				A1020846F868708F0CE894DD /* Pods_Bhagavadgeetha.framework */,
+				B4CC0F4415489BE111CA2A86 /* Pods_BhagavadgeethaTests.framework */,
+				4A78BDF8B818B902B9A5AB6B /* Pods_BhagavadgeethaUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -207,6 +235,7 @@
 				3A8137C91F72464F0018AF88 /* BhagavadgeethaUITests */,
 				3A8137A81F72464F0018AF88 /* Products */,
 				3A4651372019F72200E60431 /* Frameworks */,
+				9146CCEBD815F029A8226A68 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -317,6 +346,19 @@
 			path = ReaderViewController;
 			sourceTree = "<group>";
 		};
+		9146CCEBD815F029A8226A68 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				180A14B509AC0C4A7DEBC251 /* Pods-Bhagavadgeetha.debug.xcconfig */,
+				4011E343C05D2BCBBE9BCE8E /* Pods-Bhagavadgeetha.release.xcconfig */,
+				E3B2BF5B1F246328B5C66AB2 /* Pods-BhagavadgeethaTests.debug.xcconfig */,
+				2B6757D72D54C3AE4574D093 /* Pods-BhagavadgeethaTests.release.xcconfig */,
+				51565EF73E69033C4C8472A8 /* Pods-BhagavadgeethaUITests.debug.xcconfig */,
+				F824D144F4A42D50F1A46704 /* Pods-BhagavadgeethaUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -324,11 +366,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A8137CF1F72464F0018AF88 /* Build configuration list for PBXNativeTarget "Bhagavadgeetha" */;
 			buildPhases = (
+				8D75FF0203F7EF3C746542DD /* [CP] Check Pods Manifest.lock */,
 				3A8137A31F72464F0018AF88 /* Sources */,
 				3A8137A41F72464F0018AF88 /* Frameworks */,
 				3A8137A51F72464F0018AF88 /* Resources */,
 				3A4651442019F95100E60431 /* Run Script */,
 				5ABC9E3D216EFC97009CCEFC /* Embed Frameworks */,
+				A686A9A309983C28E7292D49 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -343,6 +387,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A8137D21F72464F0018AF88 /* Build configuration list for PBXNativeTarget "BhagavadgeethaTests" */;
 			buildPhases = (
+				55CF6B2763D4060B5597A45F /* [CP] Check Pods Manifest.lock */,
 				3A8137B71F72464F0018AF88 /* Sources */,
 				3A8137B81F72464F0018AF88 /* Frameworks */,
 				3A8137B91F72464F0018AF88 /* Resources */,
@@ -361,6 +406,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3A8137D51F72464F0018AF88 /* Build configuration list for PBXNativeTarget "BhagavadgeethaUITests" */;
 			buildPhases = (
+				45A023CC315C796366507B62 /* [CP] Check Pods Manifest.lock */,
 				3A8137C21F72464F0018AF88 /* Sources */,
 				3A8137C31F72464F0018AF88 /* Frameworks */,
 				3A8137C41F72464F0018AF88 /* Resources */,
@@ -474,6 +520,96 @@
 			runOnlyForDeploymentPostprocessing = 1;
 			shellPath = /bin/sh;
 			shellScript = "/usr/local/bin/carthage copy-frameworks\n\n";
+		};
+		45A023CC315C796366507B62 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BhagavadgeethaUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		55CF6B2763D4060B5597A45F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BhagavadgeethaTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D75FF0203F7EF3C746542DD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bhagavadgeetha-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A686A9A309983C28E7292D49 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Bhagavadgeetha/Pods-Bhagavadgeetha-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Bhagavadgeetha/Pods-Bhagavadgeetha-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -668,13 +804,11 @@
 		};
 		3A8137D01F72464F0018AF88 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 180A14B509AC0C4A7DEBC251 /* Pods-Bhagavadgeetha.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9UR97RTQTT;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SRCROOT)/Carthage/Build/iOS",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Bhagavadgeetha/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -687,13 +821,11 @@
 		};
 		3A8137D11F72464F0018AF88 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4011E343C05D2BCBBE9BCE8E /* Pods-Bhagavadgeetha.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 9UR97RTQTT;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SRCROOT)/Carthage/Build/iOS",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Bhagavadgeetha/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -706,6 +838,7 @@
 		};
 		3A8137D31F72464F0018AF88 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3B2BF5B1F246328B5C66AB2 /* Pods-BhagavadgeethaTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -721,6 +854,7 @@
 		};
 		3A8137D41F72464F0018AF88 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B6757D72D54C3AE4574D093 /* Pods-BhagavadgeethaTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -736,6 +870,7 @@
 		};
 		3A8137D61F72464F0018AF88 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51565EF73E69033C4C8472A8 /* Pods-BhagavadgeethaUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = BhagavadgeethaUITests/Info.plist;
@@ -750,6 +885,7 @@
 		};
 		3A8137D71F72464F0018AF88 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F824D144F4A42D50F1A46704 /* Pods-BhagavadgeethaUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = BhagavadgeethaUITests/Info.plist;
