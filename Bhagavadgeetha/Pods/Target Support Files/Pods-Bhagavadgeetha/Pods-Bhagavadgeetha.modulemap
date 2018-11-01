@@ -1,0 +1,6 @@
+framework module Pods_Bhagavadgeetha {
+  umbrella header "Pods-Bhagavadgeetha-umbrella.h"
+
+  export *
+  module * { export * }
+}
