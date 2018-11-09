@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import FBSDKShareKit
 
-class ReaderViewController: UIViewController {
-
+class ReaderViewController: UIViewController, FBSDKSharingDelegate {
+    
     @IBOutlet weak var readTextView: UITextView!
     @IBOutlet weak var indexLabel: UILabel!
     @IBOutlet weak var containerView: UIView!
@@ -113,10 +114,36 @@ class ReaderViewController: UIViewController {
     }
     
     private func clickedFaceBookShareOption() {
-    
+        let content = readerPresenter.getQuoteTobeShared(with: currentIndex)
+        let linkContent = FBSDKShareLinkContent()
+        linkContent.quote = content
+        linkContent.contentURL = URL(string: "https://www.facebook.com")
+        
+        let dialogue = FBSDKShareDialog()
+        dialogue.fromViewController = self
+        dialogue.shareContent = linkContent
+        if dialogue.canShow() {
+            dialogue.mode = .shareSheet
+        } else {
+            dialogue.mode = .feedBrowser
+        }
+        dialogue.delegate = self
+        dialogue.show()
     }
     
     private func clickedTwitterShareOption() {
         
+    }
+    
+    func sharer(_ sharer: FBSDKSharing!, didCompleteWithResults results: [AnyHashable : Any]!) {
+        print(results)
+    }
+    
+    func sharer(_ sharer: FBSDKSharing!, didFailWithError error: Error!) {
+        print(error)
+    }
+    
+    func sharerDidCancel(_ sharer: FBSDKSharing!) {
+        print("Sharing Cancelledx`")
     }
 }
