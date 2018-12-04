@@ -7,10 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5A01C5DD21B579670052A6DB /* LocalAuthenticationLoginConfigView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A01C5DC21B579670052A6DB /* LocalAuthenticationLoginConfigView.xib */; };
+		5A01C5E021B57B230052A6DB /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A01C5DE21B57B230052A6DB /* SettingsViewController.swift */; };
+		5A01C5E121B57B230052A6DB /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A01C5DF21B57B230052A6DB /* SettingsViewController.xib */; };
+		5A01C5E521B588450052A6DB /* LocalAuthenticationLoginConfigView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A01C5E421B588450052A6DB /* LocalAuthenticationLoginConfigView.swift */; };
 		5A3278F5214C29F200230349 /* CredentialManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3278F4214C29F200230349 /* CredentialManager.swift */; };
 		5A3278F7214D360E00230349 /* KeyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A3278F6214D360E00230349 /* KeyChain.swift */; };
-		5AB9A0A7214A38C500E96675 /* BiometricLoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB9A0A6214A38C500E96675 /* BiometricLoginManager.swift */; };
-		5AB9A0A9214A392500E96675 /* BiometricAuthenticator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB9A0A8214A392500E96675 /* BiometricAuthenticator.swift */; };
+		5AB9A0A7214A38C500E96675 /* LocalAuthenticationLoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB9A0A6214A38C500E96675 /* LocalAuthenticationLoginManager.swift */; };
+		5AB9A0A9214A392500E96675 /* LocalAuthenticationCordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AB9A0A8214A392500E96675 /* LocalAuthenticationCordinator.swift */; };
 		5AF8010B2146C07400078BEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF8010A2146C07400078BEB /* AppDelegate.swift */; };
 		5AF8010D2146C07400078BEB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AF8010C2146C07400078BEB /* ViewController.swift */; };
 		5AF801102146C07400078BEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AF8010E2146C07400078BEB /* Main.storyboard */; };
@@ -19,10 +23,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5A01C5DC21B579670052A6DB /* LocalAuthenticationLoginConfigView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LocalAuthenticationLoginConfigView.xib; sourceTree = "<group>"; };
+		5A01C5DE21B57B230052A6DB /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		5A01C5DF21B57B230052A6DB /* SettingsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
+		5A01C5E421B588450052A6DB /* LocalAuthenticationLoginConfigView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAuthenticationLoginConfigView.swift; sourceTree = "<group>"; };
 		5A3278F4214C29F200230349 /* CredentialManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CredentialManager.swift; sourceTree = "<group>"; };
 		5A3278F6214D360E00230349 /* KeyChain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChain.swift; sourceTree = "<group>"; };
-		5AB9A0A6214A38C500E96675 /* BiometricLoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricLoginManager.swift; sourceTree = "<group>"; };
-		5AB9A0A8214A392500E96675 /* BiometricAuthenticator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricAuthenticator.swift; sourceTree = "<group>"; };
+		5AB9A0A6214A38C500E96675 /* LocalAuthenticationLoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAuthenticationLoginManager.swift; sourceTree = "<group>"; };
+		5AB9A0A8214A392500E96675 /* LocalAuthenticationCordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalAuthenticationCordinator.swift; sourceTree = "<group>"; };
 		5AF801072146C07400078BEB /* FingerPrintWithACL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FingerPrintWithACL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AF8010A2146C07400078BEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5AF8010C2146C07400078BEB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -68,10 +76,14 @@
 				5AF801112146C07500078BEB /* Assets.xcassets */,
 				5AF801132146C07500078BEB /* LaunchScreen.storyboard */,
 				5AF801162146C07500078BEB /* Info.plist */,
-				5AB9A0A6214A38C500E96675 /* BiometricLoginManager.swift */,
-				5AB9A0A8214A392500E96675 /* BiometricAuthenticator.swift */,
+				5AB9A0A6214A38C500E96675 /* LocalAuthenticationLoginManager.swift */,
+				5AB9A0A8214A392500E96675 /* LocalAuthenticationCordinator.swift */,
 				5A3278F4214C29F200230349 /* CredentialManager.swift */,
 				5A3278F6214D360E00230349 /* KeyChain.swift */,
+				5A01C5DC21B579670052A6DB /* LocalAuthenticationLoginConfigView.xib */,
+				5A01C5DE21B57B230052A6DB /* SettingsViewController.swift */,
+				5A01C5DF21B57B230052A6DB /* SettingsViewController.xib */,
+				5A01C5E421B588450052A6DB /* LocalAuthenticationLoginConfigView.swift */,
 			);
 			path = FingerPrintWithACL;
 			sourceTree = "<group>";
@@ -135,8 +147,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5AF801152146C07500078BEB /* LaunchScreen.storyboard in Resources */,
+				5A01C5DD21B579670052A6DB /* LocalAuthenticationLoginConfigView.xib in Resources */,
 				5AF801122146C07500078BEB /* Assets.xcassets in Resources */,
 				5AF801102146C07400078BEB /* Main.storyboard in Resources */,
+				5A01C5E121B57B230052A6DB /* SettingsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,10 +161,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5AB9A0A9214A392500E96675 /* BiometricAuthenticator.swift in Sources */,
+				5AB9A0A9214A392500E96675 /* LocalAuthenticationCordinator.swift in Sources */,
+				5A01C5E521B588450052A6DB /* LocalAuthenticationLoginConfigView.swift in Sources */,
 				5A3278F7214D360E00230349 /* KeyChain.swift in Sources */,
+				5A01C5E021B57B230052A6DB /* SettingsViewController.swift in Sources */,
 				5A3278F5214C29F200230349 /* CredentialManager.swift in Sources */,
-				5AB9A0A7214A38C500E96675 /* BiometricLoginManager.swift in Sources */,
+				5AB9A0A7214A38C500E96675 /* LocalAuthenticationLoginManager.swift in Sources */,
 				5AF8010D2146C07400078BEB /* ViewController.swift in Sources */,
 				5AF8010B2146C07400078BEB /* AppDelegate.swift in Sources */,
 			);

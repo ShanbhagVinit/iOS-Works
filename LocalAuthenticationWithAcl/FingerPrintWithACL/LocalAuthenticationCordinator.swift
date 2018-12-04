@@ -1,5 +1,5 @@
 //
-//  BiometricAuthenticator.swift
+//  LocalAuthenticationCordinator.swift
 //  FingerPrintWithACL
 //
 //  Created by Vinit Shanbhag on 13/09/18.
@@ -9,12 +9,13 @@
 import Foundation
 import LocalAuthentication
 
-public final class BiometrciAuthenticator {
+public final class LocalAuthenticationCordinator {
     
     public typealias AuthenticationSuccess = (() -> Void)
     
     public typealias AuthenticationFailure = ((Error) -> Void)
     
+    /// Check if the touch id or face id is available on the device
     public static func canAuthenticateWithBiometrics() -> Bool {
         
         var isBiometryEnabled: Bool = false

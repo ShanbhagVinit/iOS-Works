@@ -20,7 +20,7 @@ public enum KeyChainError: Error{
     }
 }
 
-/// To work with all sorts of keychain related api s
+/// To work with all sorts of keychain related apis
 final class KeyChain {
     
     /// Store any object with key/value
@@ -68,7 +68,7 @@ final class KeyChain {
         var query: Dictionary<String, Any> = [:]
         
         query[kSecClass as String] = kSecClassGenericPassword
-        query[kSecAttrLabel as String] = CFBundleGetIdentifier(Bundle.main as! CFBundle) as CFString
+        query[kSecAttrLabel as String] = CFBundleGetIdentifier((Bundle.main as! CFBundle)) as CFString
         query[kSecAttrAccount as String] = "FingerPrintWithACL Account" as CFString
         query[kSecValueData as String] = password.data(using: .utf8)! as CFData
         query[kSecAttrApplicationTag as String] = key
@@ -90,7 +90,7 @@ final class KeyChain {
         query[kSecReturnData as String] = kCFBooleanTrue
         query[kSecAttrAccount as String] = "FingerPrintWithACL Account" as CFString
         query[kSecAttrApplicationTag as String] = key
-        query[kSecAttrLabel as String] =  CFBundleGetIdentifier(Bundle.main as! CFBundle) as CFString
+        query[kSecAttrLabel as String] =  CFBundleGetIdentifier((Bundle.main as! CFBundle)) as CFString
         query[kSecUseOperationPrompt as String] = localizedReason as CFString
         
         var queryResult: AnyObject?

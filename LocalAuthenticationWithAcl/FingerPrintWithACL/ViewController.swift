@@ -21,11 +21,19 @@ class ViewController: UIViewController {
 //        button.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
 //        button.translatesAutoresizingMaskIntoConstraints = false
         
+        let accountButton = UIBarButtonItem(image: UIImage(named: "icon_account"), style: .plain, target: self, action: #selector(accountIconTapped))
+        navigationItem.rightBarButtonItem = accountButton
+        
     }
     
     @IBAction func didTapLogin(_ sender: UIButton) {
     }
     
+    @objc func accountIconTapped() {
+        let settingsVc = SettingsViewController()
+        let nav = UINavigationController(rootViewController: settingsVc)
+        present(nav, animated: true, completion: nil)
+    }
 
 }
 

@@ -140,7 +140,7 @@ class ReaderViewController: UIViewController, FBSDKSharingDelegate {
     }
     
     func sharer(_ sharer: FBSDKSharing!, didFailWithError error: Error!) {
-        print(error)
+            print(error)
     }
     
     func sharerDidCancel(_ sharer: FBSDKSharing!) {
