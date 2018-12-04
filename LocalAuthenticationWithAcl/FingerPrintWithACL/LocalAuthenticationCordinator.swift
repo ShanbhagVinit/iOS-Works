@@ -28,6 +28,17 @@ public final class LocalAuthenticationCordinator {
         return isBiometryEnabled
     }
     
+    public static func isFaceIDAvailable() -> Bool {
+        if #available(iOS 11.0, *) {
+            let context = LAContext()
+            var error: NSError? = nil
+            if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &error) {
+                return (error == nil) && context.biometryType == .faceID
+            }
+        }
+        return false
+    }
+    
     public static func authenticate(with localizedReason: String, fallbackTitle: String = "", success successBlock: @escaping AuthenticationSuccess, failure failureBlock: @escaping AuthenticationFailure) {
         
         LAContext().evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: localizedReason) { (success, error) in

@@ -8,7 +8,7 @@
 import Foundation
 
 public protocol UserCredentialStoreType {
-    var userName: String { get set }
+    var userName: String? { get set }
     func storePassword(password: String)
     func retrievePassword(reasonForAcess: String, comepletionHandler: @escaping (String?, Error?) -> Void)
 }
@@ -26,21 +26,17 @@ final class CredentialManager: UserCredentialStoreType {
         
     }
     
-    public var userName: String {
+    public var userName: String? {
         set {
             DispatchQueue.global().sync { [weak self]  in
-                if let status = self?.secretStore.store(value: newValue, for: KeyIdentifiers.username) {
+                if let newValue = newValue, let status = self?.secretStore.store(value: newValue, for: KeyIdentifiers.username) {
                     print((status as KeyChainError).stringValue)
                 }
             }
         }
         get {
-            var resultantName: String = ""
             let returnedValue = secretStore.getValue(for: KeyIdentifiers.username)
-            if let name = returnedValue.result, returnedValue.error == nil  {
-                resultantName = name
-            }
-            return resultantName
+            return returnedValue.result
         }
     }
     
