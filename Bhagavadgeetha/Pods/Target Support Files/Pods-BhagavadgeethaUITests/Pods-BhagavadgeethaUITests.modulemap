@@ -1,6 +1,0 @@
-framework module Pods_BhagavadgeethaUITests {
-  umbrella header "Pods-BhagavadgeethaUITests-umbrella.h"
-
-  export *
-  module * { export * }
-}
